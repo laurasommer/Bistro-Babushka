@@ -1,3 +1,7 @@
+.billede {
+    width: 100%;
+}
+
 .menukort {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -10,6 +14,89 @@
     max-width: 95%;
 }
 
-h2 {
+header,
+h1,
+h2,
+p,
+.pris,
+footer {
     text-align: center;
+}
+
+
+
+/*********** MEDIA ***********/
+
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (orientation: portrait) {
+    .menukort {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 20px;
+        margin: 10px;
+    }
+    .billede {
+        width: 80%;
+        display: block;
+        margin: 0 auto;
+    }
+}
+
+@media screen and (min-width: 627px) and (orientation: landscape) {
+    .menukort {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 20px;
+        margin: 10px;
+    }
+    h2 {
+        font-size: 1em;
+    }
+}
+
+@media screen and (min-width: 768px) and (orientation: portrait) {
+    .menukort {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 20px;
+        margin: 10px;
+    }
+    .billede {
+        width: 80%;
+        display: block;
+        margin: 0 auto;
+    }
+}
+
+@media screen and (min-width:1024px) {
+    .menukort {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 20px;
+        margin: 10px;
+    }
+    .billede {
+        width: 80%;
+        display: block;
+        margin: 0 auto;
+    }
+}
+
+@media screen and (min-width:1024px) and (orientation: landscape) {
+    .menukort {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 10px;
+        margin: 0 auto;
+        max-width: 1024px;
+    }
+}
+
+@media screen and (min-width: 2560px) {
+    .menukort {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 10px;
+        margin: 0 auto;
+        max-width: 1024px;
+    }
 }
