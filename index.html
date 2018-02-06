@@ -6,24 +6,43 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bistro Babushka</title>
     <link rel="stylesheet" href="style.css">
+
+    <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
 </head>
 
 <body>
+
+    <div id="popup">
+        <div id="popupindhold">
+            <button class="close-content">Close</button>
+            <h2 class="info" data-navn> </h2>
+            <img src="" alt="" class="infoimg" data-popupBillede>
+            <details open>
+                <summary> Beskrivelse </summary>
+                <p data-beskrivelse> Her står noget tekst </p>
+
+                <p class="info" data-langbeskrivelse></p>
+                <p> Pris: <span class="info" data-pris> </span> ,-</p>
+            </details>
+        </div>
+    </div>
+
+
     <header>
-        <h1> Bistro Babushka </h1>
-
+        <h1 class="title"> BISTRO BABUSHKA </h1>
         <nav>
-            <button id="filter-alle">Alle</button>
-            <button id="filter-forretter">Forretter</button>
-            <button id="filter-hovedretter">Hovedretter</button>
-            <button id="filter-desserter">Desserter</button>
-            <button id="filter-drikkevarer">Drikkevarer</button>
+            <button id="filter-alle"> Alle</button>
+            <button id="filter-forretter"> Forretter</button>
+            <button id="filter-hovedretter"> Hovedretter</button>
+            <button id="filter-desserter"> Desserter</button>
+            <button id="filter-drikkevarer"> Drikkevarer</button>
         </nav>
-
-
     </header>
+
+
     <main>
-        <h1 id="overskrift" data-overskrift></h1>
+        <h1 id="overskrift" data-overskrift> Menu </h1>
+
         <div class="menukort" data-menukort> </div>
     </main>
 
@@ -36,10 +55,14 @@
         </artice>
     </template>
 
+
+
+
+
     <footer>
         <section>
-            <adress>Adresse: <br> Grønnegade 97, 1234 København K </adress>
-            <aside> Åbningstider: Mandag-Fredag 10.30- 22.00 - Lørdag 12:23.00</aside>
+            <adress>Adresse: Grønnegade 97 1234 København K </adress>
+            <aside> Åbningstider: Mandag-Fredag 10.30- 22.00 Lørdag 12:23.00</aside>
         </section>
     </footer>
 
