@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bistro Babushka</title>
     <link rel="stylesheet" href="style.css">
+
+    <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
 </head>
 
 <body>
@@ -32,6 +34,7 @@
             <button id="filter-alle"> Alle</button>
             <button id="filter-forretter"> Forretter</button>
             <button id="filter-hovedretter"> Hovedretter</button>
+            <button id="filter-sideorders"> Sideorders</button>
             <button id="filter-desserter"> Desserter</button>
             <button id="filter-drikkevarer"> Drikkevarer</button>
         </nav>
@@ -59,8 +62,8 @@
 
     <footer>
         <section>
-            <adress>Adresse: Grønnegade 97 1234 København K </adress>
-            <aside> Åbningstider: Mandag-Fredag 10.30- 22.00 Lørdag 12:23.00</aside>
+            <adress>Adresse: Grønnegade 97 1234 København K <br></adress>
+            <aside> Åbningstider: <br> Mandag-Fredag 10.30- 22.00 <br> Lørdag 12:23.00</aside>
         </section>
     </footer>
 
@@ -113,6 +116,10 @@
 
             //kald visRetter med de nye arrays
 
+            document.querySelector(".title").addEventListener("click", () => {
+                location.href = "index.html";
+            });
+
             document.querySelector("#filter-alle").addEventListener("click", () => {
                 location.href = "index.html";
             });
@@ -125,6 +132,8 @@
             document.querySelector("#filter-hovedretter").addEventListener("click", () => {
                 location.href = "kategori.html?kategori=hovedretter";
             });
+
+ document.querySelector("#filter-sideorders").addEventListener("click", () => { location.href = "kategori.html?kategori=sideorders"; });
 
             document.querySelector("#filter-desserter").addEventListener("click", () => {
                 location.href = "kategori.html?kategori=desserter";
