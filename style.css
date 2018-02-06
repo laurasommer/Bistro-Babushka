@@ -65,6 +65,12 @@ p {
     margin: auto;
 }
 
+#overskrift {
+
+    text-transform: capitalize;
+    /* Stort start bogstav   */
+}
+
 /*********** NAV ***********/
 
 nav {
@@ -94,6 +100,10 @@ nav button:hover {
     top: 5px;
 }
 
+/*********** KNAP ***********/
+
+/*********** POPUP ***********/
+
 #popup {
     width: 100vw;
     height: 100vh;
@@ -103,7 +113,6 @@ nav button:hover {
     /*    visibility: hidden;*/
     visibility: hidden;
 }
-
 
 #popupindhold {
     width: 50vw;
@@ -117,6 +126,20 @@ nav button:hover {
     top: 20vh;
 
 }
+
+/*********** FOOTER ***********/
+
+footer,
+footer p {
+    top: 0px;
+    padding: 5px;
+    width: 100%;
+    color: orange;
+    background-color: ;
+    text-align: center;
+    font-family: 'Opsen Sans' sans-serif;
+}
+
 
 /*********** MEDIA ***********/
 
