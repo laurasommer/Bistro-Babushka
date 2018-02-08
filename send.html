@@ -8,13 +8,35 @@
 </head>
 
 <body>
-    <main>
+
+    <!--
         <a href="modtag.html?kategori=forretter"><button>Forretter</button></a>
         <a href="modtag.html?kategori=desserter"><button>Desserter</button></a>
+-->
 
-    </main>
+    <button id="d">Desserter</button>
+    <button id="f">Forretter</button>
+
     <script>
-        consol.log(document.querySelector("button").herf);
+        //        document.querySelector("#d").addEventListener("click", clickHandlerD);
+        //        document.querySelector("#f").addEventListener("click", clickHandlerF);
+        //
+        //        function clickHandlerD() {
+        //            location.herf = "modtag.html?kategori=desserter"
+        //        }
+        //
+        //        function clickHandlerF() {
+        //            location.herf = "modtag.html?kategori=forretter"
+        //        }
+        //        console.log(document.querySelector("button").herf);
+
+        document.querySelector("#d").addEventListener("click", () => {
+            location.href = "modtag.html?kategori=desserter";
+        });
+        document.querySelector("#f").addEventListener("click", () => {
+            location.href = "modtag.html?kategori=forretter";
+        });
     </script>
 </body>
 </html>
+

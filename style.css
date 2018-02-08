@@ -118,6 +118,25 @@ nav button:hover {
 
 }
 
+/*********** FOOTER ***********/
+
+footer,
+footer p {
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 25px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    color: black;
+    background-color: ;
+    font-family: 'Opsen Sans' sans-serif;
+
+    border-top: 2px solid;
+    border-color: black;
+}
+
+
 /*********** MEDIA ***********/
 
 @media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (orientation: portrait) {

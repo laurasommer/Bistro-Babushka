@@ -13,9 +13,10 @@
     <script>
         let urlParams = new URLSearchParams(window.location.search);
 
-        let urlKategori = urlParams.get('kategori');
-        console.log(urlKategori);
+        let urlKategori = urlParams.get("kategori");
 
+        document.querySelector("h1").textContent = urlKategori;
+        console.log(urlKategori);
     </script>
 </body>
 
