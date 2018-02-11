@@ -23,7 +23,6 @@ body {
 .title {
     color: orange;
     padding: 20px;
-    font-family: 'Oswald';
 }
 
 header,
@@ -64,12 +63,6 @@ p {
     font-size: 1em;
     width: 80%;
     margin: auto;
-}
-
-#overskrift {
-
-    text-transform: capitalize;
-    /* Stort start bogstav   */
 }
 
 /*********** NAV ***********/
@@ -196,10 +189,6 @@ nav button:hover {
     top: 5px;
 }
 
-/*********** KNAP ***********/
-
-/*********** POPUP ***********/
-
 #popup {
     width: 100vw;
     height: 100vh;
@@ -209,6 +198,7 @@ nav button:hover {
     /*    visibility: hidden;*/
     visibility: hidden;
 }
+
 
 #popupindhold {
     width: 50vw;

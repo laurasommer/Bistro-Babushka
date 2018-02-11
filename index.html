@@ -14,18 +14,18 @@
 
     <div id="popup">
         <div id="popupindhold">
-            <button class="close-content">Close</button>
+            <button class="close-content"> X </button>
             <h2 class="info" data-navn> </h2>
             <img src="" alt="" class="infoimg" data-popupBillede>
-
-
             <details open>
+                <summary> Beskrivelse </summary>
+                <p data-beskrivelse> Her står noget tekst </p>
+
                 <p class="info" data-langbeskrivelse></p>
                 <p> Pris: <span class="info" data-pris> </span> ,-</p>
             </details>
         </div>
     </div>
-
 
 
     <header>
@@ -69,9 +69,6 @@
     </template>
 
 
-
-
-
     <footer>
         <section>
             <adress>Adresse: Grønnegade 97 1234 København K <br></adress>
@@ -79,86 +76,7 @@
         </section>
     </footer>
 
-
-
-    <script>
-        let menukort = [];
-
-
-        document.addEventListener("DOMContentLoaded", hentJson);
-
-        async function hentJson() {
-            let jsonData = await fetch("menu.json");
-            menukort = await jsonData.json();
-            visMenukort(menukort, "Menu");
-            lavFiltre();
-        }
-
-
-        function visMenukort(menukort, overskrift) {
-
-            let temp = document.querySelector("[data-menutemplate]");
-            let dest = document.querySelector("[data-menukort]");
-            dest.innerHTML = "";
-            document.querySelector("#overskrift").textContent = overskrift;
-
-            menukort.forEach(madret => {
-                let klon = temp.cloneNode(true).content;
-                klon.querySelector("[data-navn]").textContent = madret.navn;
-                klon.querySelector("[data-kortbeskrivelse]").textContent = madret.kortbeskrivelse;
-                klon.querySelector("[data-pris]").textContent = "Pris: " + madret.pris + " kr.";
-
-
-                klon.querySelector("[data-billede]").setAttribute("src", "imgs/small/" + madret.billede + "-sm.jpg");
-                klon.querySelector("[data-billede]").alt = "billede af " + madret.navn;
-
-
-                klon.querySelector(".food").addEventListener("click", () => {
-                    location.href = "single.html?id=" + madret.id;
-                })
-
-                dest.appendChild(klon);
-            });
-
-        }
-
-
-
-        function lavFiltre() {
-
-            //kald visRetter med de nye arrays
-
-            document.querySelector(".title").addEventListener("click", () => {
-                location.href = "index.html";
-            });
-
-            document.querySelector("#filter-alle").addEventListener("click", () => {
-                location.href = "index.html";
-            });
-
-            document.querySelector("#filter-forretter").addEventListener("click", () => {
-                location.href = "kategori.html?kategori=forretter";
-
-            });
-
-            document.querySelector("#filter-hovedretter").addEventListener("click", () => {
-                location.href = "kategori.html?kategori=hovedretter";
-            });
-
- document.querySelector("#filter-sideorders").addEventListener("click", () => { location.href = "kategori.html?kategori=sideorders"; });
-
-            document.querySelector("#filter-desserter").addEventListener("click", () => {
-                location.href = "kategori.html?kategori=desserter";
-
-            });
-
-            document.querySelector("#filter-drikkevarer").addEventListener("click", () => {
-                location.href = "kategori.html?kategori=drikkevarer";
-
-            });
-        }
-    </script>
-
+    <script src="js.js"></script>
 
 </body>
 
