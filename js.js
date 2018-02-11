@@ -72,11 +72,16 @@ function lavFiltre() {
 
     let forretter = menukort.filter(madret => madret.kategori == "forretter");
     let hovedretter = menukort.filter(madret => madret.kategori == "hovedretter");
+    let sideorders = menukort.filter(madret => madret.kategori == "sideorders");
     let desserter = menukort.filter(madret => madret.kategori == "desserter");
     let drikkevarer = menukort.filter(madret => madret.kategori == "drikkevarer");
 
 
     //kald visRetter med de nye arrays
+
+    document.querySelector(".title").addEventListener("click", () => {
+        location.href = "index.html";
+    });
 
     document.querySelector("#filter-alle").addEventListener("click", () => {
         visMenukort(menukort, "Menu");
@@ -84,6 +89,11 @@ function lavFiltre() {
 
     document.querySelector("#filter-forretter").addEventListener("click", () => {
         visMenukort(forretter, "Forretter");
+
+    });
+
+    document.querySelector("#filter-sideorders").addEventListener("click", () => {
+        visMenukort(sideorders, "Sideorders");
 
     });
 
