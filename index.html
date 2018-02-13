@@ -5,9 +5,21 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bistro Babushka</title>
+
+    <!-- Fav icon START-->
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+
+
     <link rel="stylesheet" href="style.css">
 
     <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Slab" rel="stylesheet">
 </head>
 
 <body>
@@ -39,6 +51,7 @@
             <button id="filter-drikkevarer"> Drikkevarer</button>
         </nav>
 
+        <!--
         <div class="dropdown">
             <button class="dropbtn"> <img alt="dropdown" src ="imgs/burgermenu.png"></button>
             <div class="dropdown-content">
@@ -50,11 +63,12 @@
                 <a id="filter-drikkevarer">Drikkevarer</a>
             </div>
         </div>
+-->
     </header>
 
 
     <main>
-        <h1 id="overskrift" data-overskrift> Menu </h1>
+        <h2 id="overskrift" data-overskrift> Menu </h2>
 
         <div class="menukort" data-menukort> </div>
     </main>
@@ -70,10 +84,15 @@
 
 
     <footer>
-        <section>
-            <adress>Adresse: Grønnegade 97 1234 København K <br></adress>
-            <aside> Åbningstider: <br> Mandag-Fredag 10.30- 22.00 <br> Lørdag 12:23.00</aside>
-        </section>
+        <!--        Bistro Babushka © 2018-->
+        <div class="navigation">
+            <h2>Navigation</h2>
+            <adress>Grønnegade 97<br> 1234 København K </adress>
+        </div>
+        <div class="abningstider">
+            <h2>Åbningstider</h2>
+            <aside> Mandag - Fredag: 10.30- 22.00 <br> Lørdag: 12.00-23.00</aside>
+        </div>
     </footer>
 
     <script src="js.js"></script>
