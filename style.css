@@ -101,21 +101,25 @@ nav button:hover {
     color: orange;
 }
 
-/*********** ANDET ***********/
+/*********** POPUP ***********/
 
 .close-content {
-    background-color: lightgrey;
-    border: none;
+    background-color: whitesmoke;
+    border: 1px solid;
+    border-color: #193743;
     position: absolute;
-    right: 5px;
-    top: 5px;
+    right: 3px;
+    top: 3px;
+    padding: 7px;
+    font-family: 'Josefin Slab', serif;
+    font-size: 1em;
+    color: #193743;
 }
 
 #popup {
     width: 100vw;
     height: 100vh;
     background: rgba(0, 0, 0, 0.77);
-    color: aliceblue;
     position: fixed;
     /*    visibility: hidden;*/
     visibility: hidden;
@@ -125,13 +129,34 @@ nav button:hover {
 #popupindhold {
     width: 50vw;
     height: 70vh;
-    background: #fff;
     color: black;
     margin: 0 auto;
     position: absolute;
     left: 10vw;
     right: 10vw;
     top: 20vh;
+    background-image: url(imgs/paper.jpg);
+    background-repeat: repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+
+
+details p {
+    background-color: whitesmoke;
+
+}
+
+/*********** ARTICE ***********/
+
+artice {
+    background-color: whitesmoke;
+    border: 3px solid;
+    border-color: #4b7d7c;
+    margin: 7px;
+    padding: 2px;
+    padding-bottom: 10px
 }
 
 .navn {
@@ -152,7 +177,8 @@ footer p {
     color: white;
     background-color: black;
     font-family: 'Josefin Slab', serif;
-    font-size: border-top: 2px solid;
+    font-size: 1.2em;
+    border-top: 2px solid;
     border-color: black;
 }
 
@@ -162,7 +188,7 @@ footer {
     justify-content: center;
 }
 
-.navigation {
+.adresse {
     width: 35%;
     flex-grow: 1;
     flex-basis: 100px;
