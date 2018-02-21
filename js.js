@@ -63,7 +63,7 @@ closeModal.onclick = function () {
 
 window.onclick = function (event) {
     if (event.target == modal) {
-        modal.style.display = "none";
+        modal.style.visibility = "hidden";
     }
 }
 
@@ -79,7 +79,7 @@ function lavFiltre() {
 
     //kald visRetter med de nye arrays
 
-    document.querySelector(".title").addEventListener("click", () => {
+    document.querySelector(".text").addEventListener("click", () => {
         location.href = "index.html";
     });
 
